@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movie Recommender</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Movie Recommender</h1>
+      <p>Type a movie, get similar ones instantly.</p>
+    </header>
+
+    <main>
+      <section class="search-section">
+        <label for="movie-input">Choose a movie</label>
+        <input id="movie-input" type="text" placeholder="Start typing..." autocomplete="off" />
+        <ul id="suggestions" class="suggestions"></ul>
+
+        <button id="recommend-btn">Recommend</button>
+        <div id="status" class="status"></div>
+      </section>
+
+      <section class="results" id="results"></section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
